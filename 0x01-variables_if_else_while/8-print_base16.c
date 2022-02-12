@@ -1,24 +1,18 @@
 #include <stdio.h>
+
 /**
- * main -  the numbers of base 16 in lowercase
- * Return: 0 on success
+ * main - the numbers of base 16 in lowercase
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int f = '0';
+	char c;
 
-	while (f <= '9')
-	{
-		putchar(f);
-		f++;
-	}
-	i = 'a';
-	while (i <= 'f')
-	{
-		putchar(i);
-		i++;
-	}
+	for (c = '0'; c <= '9'; c++)
+		putchar(c);
+	for (c = 'a'; c <= 'f'; c++)
+		putchar(c);
 	putchar('\n');
 	return (0);
-
 }

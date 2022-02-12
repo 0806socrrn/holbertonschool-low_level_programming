@@ -1,17 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /**
- * main - numbers of base 10 starting from 0
+ * main - 6. Numberz
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
-	int c;
+	int d = '0';
 
-	for (c = '0'; c <= '9'; c++)
-		putchar(c);
-		putchar('\n');
-
+	while (d <= '9')
+	{
+		putchar(d);
+		d++;
+	}
+	putchar('\n');
 	return (0);
 }

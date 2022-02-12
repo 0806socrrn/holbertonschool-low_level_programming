@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	char y;
+	char nic;
 
-	for (y = 'a'; y <= 'z'; y++)
-		putchar(y);
+	for (nic = 'a'; nic <= 'z'; nic++)
+		putchar(nic);
 		printf("\n");
 
 	return (0);

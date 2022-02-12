@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
  * main - numbers of base 10
  *
@@ -8,11 +7,10 @@
  */
 int main(void)
 {
-	int i;
+char e;
 
-	for (i = 0; i < 10; i++)
-		printf("%d", i);
-		printf("\n");
-
+	for (e = '0'; e <= '9'; e++)
+		putchar(e);
+	putchar('\n');
 	return (0);
 }

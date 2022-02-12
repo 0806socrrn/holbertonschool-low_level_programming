@@ -1,16 +1,18 @@
 #include <stdio.h>
 /**
- * main - owercase alphabet in reverse
- *
- * Return: Always 0 (Success)
+ * main -  the lowercase alphabet in reverse
+(*
+ * Return: 0 on success
  */
 int main(void)
 {
-	char s;
+	char s = 'z';
 
-	for (s = 'z'; s >= 'a'; s--)
+	while (s >= 'a')
+	{
 		putchar(s);
-		putchar('\n');
-
+		s--;
+	}
+	putchar('\n');
 	return (0);
 }

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <main.h>
 /**
  * main _putchar
@@ -7,7 +6,7 @@
  */
 int main(void)
 {
-	_putchar(w);
-	_putchar('\n');
+	_putchar("w");
+	_putchar("\n");
 	return (0);
 }

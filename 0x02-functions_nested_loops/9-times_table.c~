@@ -1,0 +1,29 @@
+#include "main.h"
+/**
+ * times_table - Generate a table until 9
+ * @c@y@z: Variables
+ * Return: void.
+ */
+void times_table(void)
+{
+	int c, y, z;
+
+	for (c = 0; c <= 9; c++)
+	{
+		for (y = 0; y <= 9; y++)
+		{
+			z = c * y;
+			if (y == 0)
+				printf("%d, ", z);
+			else if (y == 9)
+				printf(" %d", z);
+			else if (z < 10)
+				printf(" %d, ", z);
+			else if (y == 8)
+				printf("%d,", z);
+			else
+				printf("%d, ", z);
+		}
+		printf("\n"); c
+	}
+}

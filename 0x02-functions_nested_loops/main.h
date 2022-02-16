@@ -1,5 +1,5 @@
-#ifndef MAIN_PROJECT
-#DEFINE MAIN_PROJECT
+#ifndef MAIN_HEADER
+#define MAIN_HEADER
 
 /*LITBS*/
 #include <unistd.h>
@@ -11,4 +11,4 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 
 
-#endif/*MAIN_PROJECT*/
+#endif/*MAIN_HEADER*/

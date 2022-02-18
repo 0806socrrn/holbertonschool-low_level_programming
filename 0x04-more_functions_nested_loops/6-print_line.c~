@@ -7,16 +7,19 @@
  */
 
 void print_line(int n)
+{
   
+/**
+ * print_line - Prints line of length n
+ * @n: Length of line
+ */
+void print_line(int n)
 {
-if (n > 0)
-{
-int in;
+	int in;
 
-for (in = 1; in <= in; in++)
-{
-putchar ('_');
+	for (in = 0; in < n; in++)
+		_putchar('_');
+
+	_putchar('\n');
 }
-}
-putchar('\n');
 }

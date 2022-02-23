@@ -3,7 +3,7 @@
  * rev_string - Reverses a string in place
  * @s: pointer to the first character in the string
  */
-void rev_string(char *s);
+void rev_string(char *s)
 {
 char actual_char;
 int i = 0, j = 0;

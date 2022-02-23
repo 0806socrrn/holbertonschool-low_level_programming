@@ -9,6 +9,7 @@ void puts_half(char *s)
 int c, i;
 
 for (c = 0; s[c]; c++)
+	;
 
 for (i = (c + 1) / 2; i < c; i++)
 putchar(s[i]);

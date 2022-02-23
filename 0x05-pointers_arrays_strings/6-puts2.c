@@ -6,11 +6,19 @@
  */
 void puts2(char *str)
 {
-int i;
+int c, i;
 
-for (i = 0; *str && (i == 0 || *str[i - 1]); str += 2)
+c = 0;
+
+while (str[c] != '\0')
 {
-putchar(*str);
+c++;
 }
+
+for (i = 0; i < c; i += 2)
+{
+putchar(str[i]);
+}
+
 putchar('\n');
 }

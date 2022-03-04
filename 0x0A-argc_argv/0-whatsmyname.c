@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	if (!argc)
 		return (1);
 
-	printf("mynameis %s\n", *argv);
+	printf("%s\n", *argv);
 
 	return (0);
 }

@@ -9,14 +9,10 @@
 
 int main(int argc, char *argv[])
 {
-int i = 0;
-	if (argc > 0)
-
-	printf("%d\n", 0);
-	
 	if (argv && argc > 1)
 		printf("%d\n", argc - 1);
-
+		
+	else
+		printf("%d\n", 0);
 	return (0);
 }
-

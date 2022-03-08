@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stddef.h>
-
 /**
  * _strstr - Finds first instance of `needle` in `haystack`
  * @haystack: the string to be searched in
@@ -23,6 +20,6 @@ break;
 if (needle[i] == '\0')
 return (haystack);
 }
-return (NULL);
+return (0);
 }
 

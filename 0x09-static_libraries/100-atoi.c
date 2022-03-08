@@ -1,53 +1,33 @@
+/**
+ * _atoi - Converts a string to an integer
+ * @s: pointer to the first character of the string
+ *
+ * Return: Value of integer in string
+ */
 int _atoi(char *s)
 {
-	int digits;
-	int i = 0;
-	int j = 0;
-	int k = 0;
-	int sign = 1;
-	int acc = 0;
-	int factor = 0;
+	unsigned int num;
+	int neg;
 
-	while (s[i] != '\0')
+	neg = 1;
+	num = 0;
+
+	for (; *s; s++)
 	{
-		if (s[i] == '-')
+		if (*s >= '0' && *s <= '9')
 		{
-			sign *= -1;
-			i++;
+			num *= 10;
+			num += *s - '0';
 		}
-		else if (isa_number(s[i]))
+		else if (num > 0)
 		{
-			digits = count_digits(s, i);
-			j = digits - 1;
-
-			if (digits > 10)
-			{
-				break;
-			}
-			else
-			{
-				for (k = i; k < i + digits; k++)
-				{
-					factor = sign * (s[k] - '0') * power_int(10, j);
-					if (!(sum_int_overflows(acc, factor)))
-					{
-						acc += factor;
-						j--;
-					}
-					else
-					{
-						acc = 0;
-						break;
-					}
-				}
 			break;
-			}
 		}
-		else
+		else if (*s == '-')
 		{
-			i++;
+			neg = -neg;
 		}
 	}
 
-	return (acc);
+	return (num * neg);
 }

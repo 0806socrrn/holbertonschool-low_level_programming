@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _strcat - concatenates two strings
  * @dest: string to append to
@@ -28,4 +26,3 @@ dest[i] = '\0';
 
 return (dest);
 }
-

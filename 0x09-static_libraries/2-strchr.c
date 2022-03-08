@@ -1,14 +1,28 @@
-#include "main.h"
 /**
- * _strchr - searches string for a character
- * @s: pointer to beginning of string to be searched
- * @c: character to be searched for
- * Return: pointer to character if found, otherwise returns NULL
+ * _strchr - copies memory area.
+ * @s: Array to be scanned
+ * @c: Char to find
+ *
+ * Return: Pointer to the first ocurrence,
+ * otherwise NULL
  */
 char *_strchr(char *s, char c)
 {
-while (*s && *s != c)
-++s;
+	int i = 0;
 
-return (*s == c ? s : NULL);
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+		{
+			return (s + i);
+		}
+	i++;
+	}
+
+	if (s[i] == c)
+	{
+		return (s + i);
+	}
+
+	return ('\0');
 }

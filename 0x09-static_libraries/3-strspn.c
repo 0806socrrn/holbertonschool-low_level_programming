@@ -1,30 +1,37 @@
-#include "main.h"
-
 /**
- * _strspn - gets the length of a prefix substring
- * @s: pointer to beginning of string
- * @accept: list of acceptable characters for the prefix
- * Return: Length of prefix
+ * _strspn - gets the length of a prefix substring.
+ * @s: Array to be scanned
+ * @accept: Char to find
+ *
+ * Return: Pointer to the first ocurrence,
+ * otherwiise NULL
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int count;
-unsigned int i, c;
+	unsigned int i = 0;
+	unsigned int j = 0;
+	int count = 0;
 
-count = 0;
-for (i = 0; *s; s++, i++)
-{
-for (c = 0; accept[c]; c++)
-{
-if (*s == accept[c])
-{
-count++;
-break;
-}
+	while (s[i] != '\0')
+	{
+		while (accept[j] != '\0')
+		{
+			if (s[i] == accept[j])
+			{
+				count++;
+				break;
+			}
+		j++;
+		}
+
+		if (accept[j] == '\0')
+		{
+			break;
+		}
+	j = 0;
+	i++;
+	}
+
+	return (count);
 }
 
-if (count <= i)
-break;
-}
-return (count);
-}

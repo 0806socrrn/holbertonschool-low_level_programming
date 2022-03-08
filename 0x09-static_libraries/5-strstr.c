@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strstr - Finds first instance of `needle` in `haystack`
  * @haystack: the string to be searched in

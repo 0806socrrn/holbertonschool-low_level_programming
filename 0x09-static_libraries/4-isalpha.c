@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _isalpha - check if the ASCII character is alphabetic.
  * @c: An ASCII character code

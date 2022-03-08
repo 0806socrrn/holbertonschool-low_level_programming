@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _abs - check the absolute value of an integer.
  * @n: A integer number

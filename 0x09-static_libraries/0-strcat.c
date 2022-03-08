@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * get_termination_pos - Get the array position when the
  * termination char is located

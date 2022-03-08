@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strchr - copies memory area.
  * @s: Array to be scanned

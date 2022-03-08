@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strcmp - Compares two strings by character
  * @s1: Pointer to the first string

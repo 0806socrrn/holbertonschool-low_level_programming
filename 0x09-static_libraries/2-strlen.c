@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strlen - swap the values of two integers
  * @s: pointer to a char

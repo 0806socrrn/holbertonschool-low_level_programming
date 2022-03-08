@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strncat - This function appends the n bytes of the src string
  * to the dest string, overwriting the terminating

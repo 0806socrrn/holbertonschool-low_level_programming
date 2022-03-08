@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _islower - check if the ASCII character is lowercase.
  * @c: An ASCII character code

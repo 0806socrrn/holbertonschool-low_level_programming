@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strpbrk - searches string for a set of characters
  * @s: pointer to beginning of string to be searched

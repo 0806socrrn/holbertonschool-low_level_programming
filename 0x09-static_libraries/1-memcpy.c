@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _memcpy - Copies n bytes of memory from src to dest
  * @dest: location in memory for bytes to be copied to

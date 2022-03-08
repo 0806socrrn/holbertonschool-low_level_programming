@@ -1,28 +1,46 @@
 /**
- * _strcat - concatenates two strings
- * @dest: string to append to
- * @src: string to add
- * @n: number of bytes of str to concatenate
- * Return: a pointer to the resulting string
+ * get_termination_pos - Get the array position when the
+ * termination char is located
+ *
+ * @arr: A char array
+ *
+ * Return: The position of '\0'
  */
-char *_strncat(char *dest, char *src, int n)
+int get_termination_pos(char *arr)
 {
-int i, c;
+	int i = 0;
 
-i = 0;
-c = 0;
+	while (arr[i] != '\0')
+	{
+		i++;
+	}
 
-while (dest[i] != '\0')
-i++;
-
-while (src[c] != '\0' && c < n)
-{
-dest[i] = src[c];
-c++;
-i++;
+	return (i);
 }
 
-dest[i] = '\0';
+/**
+ * _strcat - This function appends the src string
+ * to the dest string, overwriting the terminating
+ * null byte (\0) at the end of dest, and then adds a
+ * terminating null byte
+ *
+ * @dest: Desitnation array
+ * @src: Source array
+ *
+ * Return: Destination array with the source appended at the end
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i = 0;
+	int j = get_termination_pos(dest);
 
-return (dest);
+	while (src[i] != '\0')
+	{
+		dest[j] = src[i];
+		i++;
+		j++;
+	}
+
+	dest[j] = '\0';
+	return (dest);
 }

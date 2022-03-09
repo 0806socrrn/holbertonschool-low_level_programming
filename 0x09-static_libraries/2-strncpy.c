@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main."
 /**
  * _strncpy - Copies source string to destination, but will
  *	      only copy up to N characters
@@ -8,7 +8,7 @@
  *
  * Return: Pointer to destination string
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strcpy(char *dest, char *src, int n)
 {
 	int i;
 

@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /**
  * _strncpy - Copies source string to destination, but will
  *	      only copy up to N characters

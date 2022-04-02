@@ -3,7 +3,7 @@
 /**
  * print_listint - print a linked list containing integer
  * @h: address of the first item in the list
- * return:length of the linked list
+ * Return: Length of the linked list
  */
 size_t print_listint(const listint_t *h)
 {

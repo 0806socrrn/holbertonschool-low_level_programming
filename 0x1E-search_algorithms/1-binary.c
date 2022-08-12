@@ -4,10 +4,10 @@
  * integers using the Binary search algorithm
  * @array: pointer to the first element of the array to search in
  * @size: the number of elements in array
- * @value: the value to search for
+ * @value:  the value to search for
  * Your function must return the index where value is located
  * You can assume that array will be sorted in ascending order
- * 
+ * Return: index where value is located
  */
 int binary_search(int *array, size_t size, int value)
 {
